@@ -9,7 +9,7 @@ test('labels num as even', function(assert) {
     const even = isEven(x, y);
 
     assert.equal(even, expected);
-})
+});
 
 test('labels num as odd', function(assert) {
     const x = 5;
@@ -19,4 +19,4 @@ test('labels num as odd', function(assert) {
     const even = isEven(x, y);
 
     assert.equal(even, expected);
-})
+});
