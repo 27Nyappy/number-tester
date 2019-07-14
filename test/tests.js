@@ -4,7 +4,7 @@ const test = QUnit.test;
 test('labels num as even', function(assert) {
     const x = 4;
     const y = 2;
-    const expected = 'Your number is even.';
+    const expected = document.getElementById('even');
 
     const even = isEven(x, y);
 
@@ -14,7 +14,7 @@ test('labels num as even', function(assert) {
 test('labels num as odd', function(assert) {
     const x = 5;
     const y = 2;
-    const expected = 'Your number is odd.';
+    const expected = document.getElementById('odd');
 
     const even = isEven(x, y);
 

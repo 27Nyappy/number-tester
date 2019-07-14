@@ -1,9 +1,9 @@
-function isEven(number) {
-    if(number % 2 === 0) {
-        return 'Your number is even.';
+function isEven(input) {
+    if(input % 2 === 0) {
+        return document.getElementById('even');
     }
-    if(number % 2 === 1) {
-        return 'Your number is odd.';
+    if(input % 2 === 1) {
+        return document.getElementById('odd');
     }
 }
 
