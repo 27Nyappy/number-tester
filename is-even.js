@@ -1,8 +1,8 @@
-function isEven(input) {
-    if(input % 2 === 0) {
+function isEven(Number) {
+    if(Number % 2 === 0) {
         return document.getElementById('even');
     }
-    if(input % 2 === 1) {
+    if(Number % 2 === 1) {
         return document.getElementById('odd');
     }
 }

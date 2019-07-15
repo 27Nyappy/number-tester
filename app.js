@@ -1,20 +1,18 @@
 import isEven from './is-even.js';
 const input = document.getElementById('input');
 const button = document.getElementById('button');
-const even = document.getElementsByClassName('hiddenEven');
-const odd = document.getElementsByClassName('hiddenOdd');
+const even = document.getElementById('even');
+const odd = document.getElementById('odd');
 
 
 button.onclick = function() {
-    const par = Number(input.value);
+    const par = isEven(Number(input.value));
 
-    if(par === even) {
-        even.classList.remove('hidden');
-        even.textContent = isEven(even);
+    if(par === true) {
+        even.classList.remove('even');
+        odd.classList.add('odd');
+    } else {
+        even.classList.add('even');
+        odd.classList.remove('odd');
     }
-    if(par === odd) {
-        odd.classList.remove('hidden');
-        odd.textContent = isEven(odd);
-    }
-
 };

@@ -1,7 +1,9 @@
-.hiddenEven {
+.hidden {
     visibility: hidden
 }
-
-.hiddenOdd {
+#even {
+    visibility: hidden
+}
+#odd {
     visibility: hidden
 }
